@@ -20,6 +20,10 @@ public class HighestPlacements {
 	else if(It>Cse && It>Mech)
 	{System.out.println("Mech has the Highest Placements");
 	}
+	else if (Cse==It || It==Mech)
+	{System.out.println("Any of the two branches have same placement");	
+	}
+	
 	else
 	{System.out.println("Mech has the Highest Placements");
 	}
