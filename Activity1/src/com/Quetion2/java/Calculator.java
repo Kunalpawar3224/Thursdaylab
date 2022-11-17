@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Calculator {
 
 		public static void main(String[] args) {
-			int a,b;
+			int x,y;
 			int choice;
 			int Add,Substract,Multiply,Div;
 			
@@ -17,30 +17,30 @@ public class Calculator {
 			System.out.println("2 Substract");
 			System.out.println("3 Multiply");
 			System.out.println("4 Div");
-			//Input for the user taken through scanner
+			
 					Scanner sc=new Scanner(System.in);
 					choice=sc.nextInt();
 			System.out.println("Enter your first numbers:");
-			a=sc.nextInt();
+			x=sc.nextInt();
 			System.out.println("Enter your second numbers:");
-			b=sc.nextInt();
+			y=sc.nextInt();
 			
 			switch(choice)
 			{
 			case 1:
-				Add=a+b;
+				Add=x+y;
 				System.out.println("Addition of numbers is "+Add);
 				break;
 			case 2:
-				Substract=a-b;
+				Substract=x-y;
 				System.out.println("Substraction of numbers is "+Substract);
 				break;
 			case 3:
-				Multiply=a*b;
+				Multiply=x*y;
 				System.out.println("Multiplication of numbers is "+Multiply);
 				break;
 			case 4:
-				Div=a/b;
+				Div=x/y;
 				System.out.println("Division of numbers is "+Div);
 				break;
 			default:
