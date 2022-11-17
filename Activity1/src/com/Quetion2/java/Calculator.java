@@ -1,54 +1,55 @@
 package com.Quetion2.java;
 
+
 import java.util.Scanner;
-//Authoris Kunal
-//Code to display PatternProgram
 
 public class Calculator {
-	  public static void main(String[] args) {
 
-	    char operator;
-	    Double number1, number2, result;
-
-	    // create an object of Scanner class
-	    Scanner input = new Scanner(System.in);
-
-	    System.out.println("Choose an operator: +, -, *, or /");
-	    operator = input.next().charAt(0);
-
-	    // ask users to enter numbers
-	    System.out.println("Enter first number");
-	    number1 = input.nextDouble();
-
-	    System.out.println("Enter second number");
-	    number2 = input.nextDouble();
-
-	    switch (operator) {
-	      case '+':
-	        result = number1 + number2;
-	        System.out.println(number1 + " + " + number2 + " = " + result);
-	        break;
-
-	      case '-':
-	        result = number1 - number2;
-	        System.out.println(number1 + " - " + number2 + " = " + result);
-	        break;
-	        
-	      case '*':
-	        result = number1 * number2;
-	        System.out.println(number1 + " * " + number2 + " = " + result);
-	        break;
-
-	      case '/':
-	        result = number1 / number2;
-	        System.out.println(number1 + " / " + number2 + " = " + result);
-	        break;
-
-	      default:
-	        System.out.println("Invalid operator!");
-	        break;
-	    }
-	    input.close();
-	  }
-	}
+		public static void main(String[] args) {
+			int a,b;
+			int choice;
+			int Add,Substract,Multiply,Div;
+			
+			System.out.println("Enter your choice");
+			//choose which operation user have to perform
+			System.out.println("1.Addition");
+			System.out.println("2.Substraction");
+			System.out.println("3.Multiplication");
+			System.out.println("4.Division");
+			//Input for the user taken through scanner
+					Scanner sc=new Scanner(System.in);
+					choice=sc.nextInt();
+			System.out.println("Enter first numbers:");
+			a=sc.nextInt();
+			System.out.println("Enter second numbers:");
+			b=sc.nextInt();
+			
+			switch(choice)
+			{
+			case 1:
+				Add=a+b;
+				System.out.println("Addition of number is :"+Add);
+				break;
+			case 2:
+				Substract=a-b;
+				System.out.println("Substraction of number is :"+Substract);
+				break;
+			case 3:
+				Multiply=a*b;
+				System.out.println("Multiplication of number is :"+Multiply);
+				break;
+			case 4:
+				Div=a/b;
+				System.out.println("Division of number is :"+Div);
+				break;
+			default:
+			
+				System.out.println("you have enetred a wrong choice,Enter correct choice");
+				break;
+				
+			}
+		}		
+				
+		
+}
 
